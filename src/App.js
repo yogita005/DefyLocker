@@ -1,23 +1,17 @@
 import React from 'react';
-import Carousel from './components/Carousel';
-import Destinations from './components/Destinations';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Navbar from './components/Navbar';
-import Search from './components/Search';
-import Selects from './components/Selects';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import First from './First'; // Import your first page component
+import Second from './Second'; // Import your second page component
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Destinations />
-      <Search />
-      <Selects />
-      <Carousel />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        
+        <Route path="/" element={<First />} />
+        <Route path="/second" element={<Second />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
