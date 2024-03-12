@@ -1,15 +1,14 @@
-
 import Navbar from './components/Navbar';
 import SideNavBar from './components/sidenav';
-import { Link } from 'react-router-dom';
+import Card from './components/Card';
 
-function Second() {
+function Third() {
   return (
     <div>
       <Navbar />
-      <SideNavBar/>
+      <Card />
     </div>
   );
 }
 
-export default Second;
+export default Third;
