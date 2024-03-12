@@ -1,5 +1,6 @@
 import React from 'react';
 import FileUpload from './FileUpload';
+import { Link } from 'react-router-dom';
 const SideNavBar = () => {
   return (
     <div className="flex h-screen bg-white">
@@ -8,16 +9,17 @@ const SideNavBar = () => {
        
         <nav>
           <ul className="p-2 mt-[50px]">
-            <li>
-              <a href="#" className="text-black hover:bg-gray-100 py-2 px-4 block">
-                Issued documents
+          <li>
+              <a href="#" className="text-black hover:bg-gray-100 py-2 px-4 block"><Link to="/Second" >
+                Upload Documents</Link>
               </a>
             </li>
             <li>
-              <a href="#" className="text-black hover:bg-gray-100 py-2 px-4 block">
-                Fetch Documents
+              <a href="#" className="text-black hover:bg-gray-100 py-2 px-4 block"><Link to="/Third" >Issued documents
+              </Link>  
               </a>
             </li>
+  
             <li>
               <a href="#" className="text-black hover:bg-gray-100 py-2 px-4 block">
                 About DefyLocker

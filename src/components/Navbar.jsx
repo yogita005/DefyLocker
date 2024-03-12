@@ -40,7 +40,7 @@ const Navbar = () => {
           <h1>DEFYLOCKER</h1>
           <li className='border-b'><Link to="/First">Home</Link></li>
           <li className='border-b'><Link to="/Second">Upload</Link></li>
-          <li className='border-b'>Issued</li>
+          <li className='border-b'><Link to="/Third">Issued</Link></li>
           <div className='flex flex-col'>
             <button className='my-6'>Search</button>
             <button>Account</button>

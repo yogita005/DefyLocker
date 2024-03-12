@@ -9,7 +9,7 @@ function First() {
     <div>
       <Navbar />
       <Hero />
-   
+    
       <Search />
       <div className="flex justify-center items-center mt-[20px] mb-[20px]">
         <Link
